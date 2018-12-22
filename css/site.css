@@ -3,3 +3,30 @@
     max-width: 32px; 
     max-height: 32px;
 }
+
+.qouteleft {
+    color: green;
+}
+.qouteright {
+    float: right;
+    color: green;
+    position: relative;
+    right: 10px;
+    padding-bottom: 25px;
+}
+.ravenbanner {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    padding-bottom: 20px;
+}
+
+.qoutebtn {
+    display: flex;
+    justify-content: center;
+    left: 200px;
+}
+
+.qoutectn {
+    padding-top: 20px;
+}
