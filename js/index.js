@@ -21,3 +21,5 @@ function setQoute() {
     var qoute = generateQoute();
     document.getElementById("qoute").innerHTML = qoute;
 }
+
+setQoute();
