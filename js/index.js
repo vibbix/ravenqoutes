@@ -14,7 +14,7 @@ ga('create', analytics, 'auto');
 ga('send', 'pageview');
 
 var markactions = ["touch my inner thigh", "forgot my name", "sad spank me",
-    "look sad", "build a snowman", "make me a snowman", "fall asleep on me again",
+    "look sad", "build a snowman", "make me a snowman", "fall asleep on me again", "dangle off the rooftop",
     "play dark drone ambient banjo music", "lick things", "go hang out with Cara",
     "let your phone die again", "get lost in a circle", "make this website", "be born of incest",
     "get lost in the mountain that is the stuff on my floor", "drive so fast", "forget to eat because JD isn't cooking",
@@ -26,9 +26,10 @@ var ravenactions = ["playing the banjo", "reading", "crying about not getting my
     "listening to Oingo Boingo", "becoming Ezekiel Goldthwait", "admiring Jemima Debuke", "being a funny person",
     "watching crappy Christmas movies", "getting broken up with over email", "wearing my Nicolas Cage shirt", "12",
     "making Lord of The Rings references", "at the Struts concert with you", "at the work party with you",
-    "trying to look bothered", "doing art student things", "born of incest", "being a bit Genghis Khan"
+    "trying to look bothered", "doing art student things", "born of incest", "having scary dreams about your ex"
 ];
 let qoutetypes = 100;
+let version = "v1.2"
 
 function getRandomListItem(list) {
     var i = Math.floor(Math.random() * list.length);
@@ -47,14 +48,27 @@ function generateQoute() {
 
 function setQoute(sendevent = true) {
     var qoute = generateQoute();
-    document.getElementById("qoute").innerHTML = qoute;
+    if (qoute.includes("I love you") || (qoute.includes("banjo") && qoute.includes("thigh"))){
+        $("#ravenAttr").html(" - Raven Goldston (Definitely)");
+    } else {
+        $("#ravenAttr").html(" - Raven Goldston (probably)");
+    }
+    $("#qoute").html(qoute);
     if (sendevent) {
         ga('send', 'event', 'generate', 'generateqoute');
     }
-    console.log(`Qoute generated: ${qoute}; Event: ${sendevent}`)
-
 }
 
-function initPage() {
-    setQoute(false);
-}
+$(function () {
+    $("#version").html(`Version: ${version}`);
+    setQoute();
+});
+
+$( "#sun" )
+  .mouseover(function() {
+    
+    $( this ).find( "span" ).text( "mouse over x " + i );
+  })
+  .mouseout(function() {
+    $( this ).find( "span" ).text( "mouse out " );
+  });
