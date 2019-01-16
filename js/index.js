@@ -30,7 +30,7 @@ var ravenactions = ["playing the banjo", "reading", "crying about not getting my
     "trying to be vegan", "being your favorite", "trying to show up my Ex during NYE", "eat my children", "talk about my chexmix"
 ];
 let qoutetypes = 100;
-let version = "v1.2"
+let version = "v1.2.1"
 
 "I can'r"
 
