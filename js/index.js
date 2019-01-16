@@ -26,13 +26,11 @@ var ravenactions = ["playing the banjo", "reading", "crying about not getting my
     "listening to Oingo Boingo", "becoming Ezekiel Goldthwait", "admiring Jemima Debuke", "being a funny person",
     "watching crappy Christmas movies", "getting broken up with over email", "wearing my Nicolas Cage shirt", "12",
     "making Lord of The Rings references", "at the Struts concert with you", "at the work party with you",
-    "trying to look bothered", "doing art student things", "born of incest", "having scary dreams about your ex",
-    "trying to be vegan", "being your favorite", "trying to show up my Ex during NYE", "eat my children", "talk about my chexmix"
+    "trying to look bothered", "doing art student things", "born of incest", "talking about my chexmix",
+    "trying to be vegan", "being your favorite", "trying to show up my Ex during NYE", "eat my children", 
 ];
 let qoutetypes = 100;
-let version = "v1.2.1"
-
-"I can'r"
+let version = "v1.2.2"
 
 function getRandomListItem(list) {
     var i = Math.floor(Math.random() * list.length);
