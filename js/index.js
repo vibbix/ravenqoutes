@@ -19,7 +19,8 @@ var markactions = ["touch my inner thigh", "forgot my name", "sad spank me", "ca
     "let your phone die again", "get lost in a circle", "make this website", "be born of incest", "manage to mispell quotes",
     "get lost in the mountain that is the stuff on my floor", "drive so fast", "remove bad qoutes from the site", "be mean to me",
     "try grabbing the pen", "space out", "start a fire with all the string lights", "disappoint me", "visit the clinic",
-    "like candles a bit too much", "steal more street signs", "go to my improv show", "be my favorite", "taste the excellence"
+    "like candles a bit too much", "steal more street signs", "go to my improv show", "be my favorite", "taste the excellence",
+    "touch my butt",
 ];
 var ravenactions = ["playing the banjo", "reading", "crying about not getting my milkshake", "trying to dirty talk in Spanish",
     "carried home from the hospital", "being Raven", "avoiding El Segundo", "buying your sister a backpack",
@@ -27,10 +28,10 @@ var ravenactions = ["playing the banjo", "reading", "crying about not getting my
     "watching crappy Christmas movies", "getting broken up with over email", "wearing my Nicolas Cage shirt", "12",
     "making Lord of The Rings references", "at the Struts concert with you", "at the work party with you",
     "trying to look bothered", "doing art student things", "born of incest", "talking about my chexmix", "being number one",
-    "trying to be vegan", "being your favorite", "trying to show up my Ex during NYE", "eat my children", 
+    "trying to be vegan", "being your favorite", "trying to show up my Ex during NYE", "eat my children", "your family is here",
 ];
 let qoutetypes = 100;
-let version = "v1.2.3"
+let version = "v1.2.4"
 
 function getRandomListItem(list) {
     var i = Math.floor(Math.random() * list.length);
